@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <script defer src="js/main.min.js"></script>
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row">
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+        <div class="col">
+          <div class="col_div"><h2></h2></div>
+          <button data-lock="true" class="col_btn">
+            <ion-icon data-lock="true" class="col_icon" name="lock-open-outline"></ion-icon>
+            <!-- <ion-icon name="lock-open-outline"></ion-icon> -->
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- 
+const cols = document.querySelectorAll('.col');
+
+cols[0].style.backgroundColor = 'red';
+
+document.addEventListener('keydown', (e) => {
+  e.preventDefault();
+  if (e.code.toLowerCase() === 'space') {
+    setColors();
+  }
+});
+
+const randomColor = () => {
+  const hex = '0123465789ABCDEF';
+  let res = '';
+  for (let index = 0; index < 6; index++) {
+    res += hex[Math.floor(Math.random() * hex.length)];
+  }
+
+  return res;
+};
+
+const userCopyColor = (text) => {
+  text.parentElement.appendChild(document.createElement('div'));
+  const textNew = text.parentElement.querySelector('div');
+  textNew.classList.add('copied');
+  textNew.innerHTML = `copied`;
+
+  setTimeout(() => {
+    textNew.classList.add('disactive');
+  }, 50);
+  setTimeout(() => {
+    text.parentElement.removeChild(textNew);
+  }, 500);
+  navigator.clipboard.writeText(text.innerHTML);
+};
+
+const setColors = (initial) => {
+  const colors = initial ? getColorsFromHash() : [];
+
+  cols.forEach((col, index) => {
+    const lock = col.querySelector('ion-icon');
+    if (colors[index]) {
+      if (colors[index][colors[index].length - 1] === '!') {
+        lock.name = 'lock-closed-outline';
+        lock.classList.add('lock');
+      }
+    }
+
+    const text = col.querySelector('h2');
+    text.addEventListener('click', () => userCopyColor(text));
+
+    const isLocked = lock.classList.contains('lock') ? true : false;
+    const COLOR = colors[index] || `#${randomColor()}`;
+
+    if (isLocked && initial) {
+      console.log(COLOR);
+      text.textContent = COLOR.substring(0, COLOR.length - 1);
+      console.log(COLOR.substring(1));
+      col.style.backgroundColor = COLOR.substring(0, COLOR.length - 1);
+    }
+    if (isLocked) {
+      colors.push(text.textContent);
+      return;
+    }
+
+    colors.push(COLOR);
+
+    text.textContent = COLOR;
+    col.style.backgroundColor = COLOR;
+
+    const btn = col.querySelector('button');
+    let CLICK = false;
+    btn.addEventListener('click', () => {
+      if (CLICK === false) {
+        colors[index] = colors[index] + '!';
+        updateColorsHash(colors);
+        CLICK = true;
+        console.log(colors);
+      } else {
+        colors[index] = colors[index].substring(0, colors[index].length - 1);
+        updateColorsHash(colors);
+        CLICK = false;
+      }
+    });
+  });
+
+  updateColorsHash(colors);
+  delete colors;
+};
+
+function lockColor(e) {
+  if (e.target.dataset.lock === 'true') {
+    const node = e.target.tagName.toLowerCase() === 'button' ? e.target.children[0] : e.target;
+    node.classList.toggle('lock');
+    node.name = node.classList.contains('lock') ? 'lock-closed-outline' : 'lock-open-outline';
+  }
+}
+document.addEventListener('click', (e) => lockColor(e));
+
+function updateColorsHash(colors = []) {
+  document.location.hash = colors
+    .map((col) => {
+      return col.substring(1);
+    })
+    .join('-');
+  console.log(
+    colors
+      .map((col) => {
+        return col.substring(1);
+      })
+      .join('-'),
+  );
+}
+setColors(true);
+function getColorsFromHash() {
+  if (document.location.hash.length > 1) {
+    return document.location.hash
+      .substring(1)
+      .split('-')
+      .map((color) => '#' + color);
+  }
+  return [];
+}
+
+ -->
